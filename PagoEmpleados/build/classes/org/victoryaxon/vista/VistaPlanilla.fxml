@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.victoryaxon.controladores.ControladorPlanilla">
+   <children>
+      <Label fx:id="lblTexto" layoutX="483.0" layoutY="27.0" prefHeight="44.0" prefWidth="95.0" text="Planilla">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblPlanilla" disable="true" layoutX="20.0" layoutY="337.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="262.0" prefWidth="800.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <columns>
+            <TableColumn fx:id="colIdPlanilla" prefWidth="75.0" text="ID Planilla" />
+            <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />
+            <TableColumn fx:id="colAnio" prefWidth="75.0" text="Ano" />
+            <TableColumn fx:id="colBonificacion" prefWidth="75.0" text="Bonificacion" />
+            <TableColumn fx:id="colSalarioOrdinario" prefWidth="102.0" text="Salario Ordinario" />
+            <TableColumn fx:id="colTotal" prefWidth="63.0" text="Total" />
+            <TableColumn fx:id="colRetencion" prefWidth="81.0" text="Retencion" />
+            <TableColumn fx:id="colIgss" prefWidth="88.0" text="IGSS" />
+            <TableColumn fx:id="colLiquido" prefWidth="88.0" text="Liquido" />
+            <TableColumn fx:id="colFechaGenerada" prefWidth="88.0" text="Fecha Generada" />
+            <TableColumn fx:id="colMes" prefWidth="88.0" text="mes" />
+         </columns>
+      </TableView>
+      <MenuBar layoutX="-3.0" layoutY="2.0" prefHeight="25.0" prefWidth="1054.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Mantenimiento">
+               <items>
+                  <MenuItem fx:id="btnAtras" mnemonicParsing="false" onAction="#retornarVentana" text="Atras" />
+                  <MenuItem mnemonicParsing="false" onAction="#agregando" text="Nuevo" />
+                  <MenuItem mnemonicParsing="false" onAction="#visible" text="Modificar" />
+                  <MenuItem mnemonicParsing="false" onAction="#ConsultarActivado" text="ConsultarActivado" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="btnAgregar" disable="true" layoutX="135.0" layoutY="175.0" mnemonicParsing="false" onAction="#guardar" text="Agregar" />
+      <Button fx:id="btnEditar" disable="true" layoutX="50.0" layoutY="608.0" mnemonicParsing="false" onAction="#modificar" text="Editar" />
+      <Button fx:id="btnEliminar" disable="true" layoutX="109.0" layoutY="608.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <ImageView fx:id="imgRetorno" fitHeight="25.0" fitWidth="49.0" layoutX="1051.0" layoutY="2.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnRetorno" layoutX="1051.0" layoutY="2.0" mnemonicParsing="false" onAction="#retornarVentana" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="r" />
+      <Separator layoutX="524.0" layoutY="75.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Button fx:id="btnConsultar" disable="true" layoutX="49.0" layoutY="175.0" mnemonicParsing="false" onAction="#consultar" text="Consultar" />
+      <ComboBox fx:id="cbmAnio" disable="true" layoutX="97.0" layoutY="90.0" prefHeight="22.0" prefWidth="157.0" promptText="Seleccione el Año" />
+      <Label layoutX="50.0" layoutY="94.0" text="Año " />
+      <Label layoutX="49.0" layoutY="128.0" text="Mes" />
+      <ComboBox fx:id="cbmMes" disable="true" layoutX="97.0" layoutY="124.0" prefHeight="22.0" prefWidth="157.0" promptText="Seleccione el Mes" />
+      <TextField fx:id="txtSueldoOrdinario" disable="true" layoutX="646.0" layoutY="78.0" promptText="Seleccione un registro" />
+      <TextField fx:id="txtBonificacion" disable="true" layoutX="646.0" layoutY="116.0" promptText="Seleccione un registro" />
+      <TextField fx:id="txtRetencion" disable="true" layoutX="646.0" layoutY="157.0" promptText="Seleccione un registro" />
+      <TextField fx:id="txtIgss" disable="true" layoutX="896.0" layoutY="78.0" promptText="Seleccione un registro" />
+      <Label layoutX="548.0" layoutY="82.0" text="Sueldo Ordinario" />
+      <Label layoutX="549.0" layoutY="120.0" text="Bonificacion" />
+      <Label layoutX="552.0" layoutY="161.0" text="RetencionISR" />
+      <Label layoutX="839.0" layoutY="82.0" text="IGSS" />
+   </children>
+</AnchorPane>

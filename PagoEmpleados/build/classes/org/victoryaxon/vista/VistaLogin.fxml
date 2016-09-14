@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="270.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.victoryaxon.controladores.ControladorLogin">
+   <children>
+      <TextField fx:id="txtLogin" layoutX="129.0" layoutY="117.0" prefHeight="25.0" prefWidth="205.0" promptText="Usuario">
+         <tooltip>
+            <Tooltip text="Usuario asignado" textAlignment="CENTER" />
+         </tooltip></TextField>
+      <PasswordField fx:id="txtPassword" layoutX="129.0" layoutY="161.0" prefHeight="25.0" prefWidth="205.0" promptText="Contraseña">
+         <tooltip>
+            <Tooltip text="Contraseña Correcta" />
+         </tooltip></PasswordField>
+      <Label layoutX="39.0" layoutY="121.0" text="Login" />
+      <Label layoutX="33.0" layoutY="165.0" text="Contraseña" />
+      <Button fx:id="btnLogin" defaultButton="true" layoutX="288.0" layoutY="212.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Button fx:id="btnLogin1" layoutX="218.0" layoutY="212.0" mnemonicParsing="false" onAction="#cerrar" text="Cancelar" />
+      <Button layoutX="127.0" layoutY="212.0" mnemonicParsing="false" onAction="#ventanaRegistro" text="Crear cuenta" />
+      <ImageView fx:id="imgLogin" fitHeight="83.0" fitWidth="103.0" layoutX="144.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

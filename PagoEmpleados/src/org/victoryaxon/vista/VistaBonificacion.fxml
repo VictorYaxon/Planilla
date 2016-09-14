@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.victoryaxon.controladores.VistaBonificacionController">
+   <children>
+      <Label fx:id="lblTexto" layoutX="327.0" layoutY="19.0" prefHeight="95.0" prefWidth="174.0" text="Bonificaciones">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblBonificacion" layoutX="15.0" layoutY="92.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="262.0" prefWidth="794.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="14.0">
+         <columns>
+            <TableColumn fx:id="colidBonificacion" prefWidth="89.0" text="ID Bonificacion" />
+            <TableColumn fx:id="colBonificacionEmpleado" prefWidth="100.0" text="Bonificacion" />
+            <TableColumn fx:id="colFechaBonificacion" prefWidth="124.0" text="Fecha Bonificacion" />
+            <TableColumn fx:id="colIdEmpleado" prefWidth="92.0" text="Empleado" />
+         </columns>
+      </TableView>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="755.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Mantenimiento">
+               <items>
+                  <MenuItem fx:id="btnRegresar" mnemonicParsing="false" onAction="#retornarVentana" text="Atras" />
+                  <MenuItem mnemonicParsing="false" onAction="#AgregarActivado" text="Nuevo" />
+                  <MenuItem mnemonicParsing="false" onAction="#editarActivado" text="Editar" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="83.0" layoutY="430.0" text="Empleado" />
+      <Label layoutX="83.0" layoutY="472.0" text="Cuota de Bonificacion" />
+      <ComboBox fx:id="cmbEmpleado" disable="true" layoutX="202.0" layoutY="426.0" prefWidth="150.0" promptText="Seleccione una opcion" />
+      <TextField fx:id="txtBonificacion" disable="true" layoutX="202.0" layoutY="468.0" prefHeight="22.0" prefWidth="150.0" promptText="Ingrese la cuota de bonificacion" />
+      <Button fx:id="btnAgregar" disable="true" layoutX="52.0" layoutY="535.0" mnemonicParsing="false" onAction="#guardar" text="Agregar" />
+      <Button fx:id="btnEditar" disable="true" layoutX="115.0" layoutY="535.0" mnemonicParsing="false" onAction="#modificar" text="Editar" />
+      <Button fx:id="btnEliminar" disable="true" layoutX="166.0" layoutY="535.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <ImageView fx:id="imgRetorno" fitHeight="25.0" fitWidth="49.0" layoutX="773.0" layoutY="-1.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnRetorno" layoutX="773.0" layoutY="-1.0" mnemonicParsing="false" onAction="#retornarVentana" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="r" />
+   </children>
+</AnchorPane>

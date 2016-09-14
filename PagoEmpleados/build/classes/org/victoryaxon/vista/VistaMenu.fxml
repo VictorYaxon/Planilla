@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.victoryaxon.controladores.ControladorMenu">
+   <children>
+      <ImageView fx:id="imgClose" fitHeight="25.0" fitWidth="25.0" focusTraversable="true" layoutX="574.0" layoutY="8.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="53.0" layoutY="337.0" text="Bonificacion" />
+      <Label layoutX="201.0" layoutY="337.0" text="Planilla" />
+      <Label layoutX="312.0" layoutY="177.0" text="Salario Ordinario" />
+      <Label layoutX="199.0" layoutY="178.0" text="IGSS" />
+      <Label layoutX="51.0" layoutY="178.0" text="Usuarios" />
+      <Button fx:id="btnSalir" focusTraversable="false" layoutX="574.0" layoutY="3.0" mnemonicParsing="false" onAction="#salir" opacity="0.98" text="×" />
+      <Button fx:id="btnIgss" layoutX="169.0" layoutY="46.0" mnemonicParsing="false" onAction="#ventanaIgss" opacity="0.02" prefHeight="105.0" prefWidth="105.0" />
+      <Button fx:id="btnSalarioOrdinario" layoutX="300.0" layoutY="47.0" mnemonicParsing="false" onAction="#ventanaSalarioOrdinario" opacity="0.02" prefHeight="105.0" prefWidth="105.0" />
+      <Button fx:id="btnEmpleados" layoutX="300.0" layoutY="220.0" mnemonicParsing="false" onAction="#ventanaEmpleados" opacity="0.02" prefHeight="105.0" prefWidth="105.0" />
+      <Button fx:id="btnPlanilla" layoutX="167.0" layoutY="221.0" mnemonicParsing="false" onAction="#ventanaPlanilla" opacity="0.02" prefHeight="105.0" prefWidth="105.0" />
+      <Button fx:id="btnBonificacion" layoutX="28.0" layoutY="221.0" mnemonicParsing="false" onAction="#ventanaBonificacion" opacity="0.02" prefHeight="105.0" prefWidth="105.0" />
+      <Button fx:id="btnUsuarios" ellipsisString="110" layoutX="28.0" layoutY="46.0" mnemonicParsing="false" onAction="#ventanaUsuarios" opacity="0.02" prefHeight="105.0" prefWidth="105.0" textOverrun="CENTER_ELLIPSIS" />
+      <Label layoutX="328.0" layoutY="337.0" text="Empleados" />
+      <Label layoutX="470.0" layoutY="337.0" text="Cerrar Sesion" />
+      <Button fx:id="btnEmpleados1" layoutX="443.0" layoutY="220.0" mnemonicParsing="false" onAction="#logout" opacity="0.02" prefHeight="105.0" prefWidth="105.0" />
+      <Button fx:id="btnSalarioOrdinario1" layoutX="443.0" layoutY="47.0" mnemonicParsing="false" onAction="#ventanaRetencion" opacity="0.02" prefHeight="105.0" prefWidth="105.0" />
+      <Label layoutX="455.0" layoutY="177.0" text="Retencion ISR" />
+      <ImageView fx:id="imgUsuarios" fitHeight="105.0" fitWidth="105.0" layoutX="28.0" layoutY="46.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgBonificacion" fitHeight="105.0" fitWidth="105.0" layoutX="28.0" layoutY="221.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgIgss" fitHeight="105.0" fitWidth="105.0" layoutX="169.0" layoutY="47.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgSalario" fitHeight="105.0" fitWidth="105.0" layoutX="300.0" layoutY="47.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgRetencion" fitHeight="105.0" fitWidth="105.0" layoutX="443.0" layoutY="46.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgEmpleado" fitHeight="105.0" fitWidth="105.0" layoutX="300.0" layoutY="221.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgPlanilla" fitHeight="105.0" fitWidth="105.0" layoutX="167.0" layoutY="221.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgLogout" fitHeight="105.0" fitWidth="105.0" layoutX="453.0" layoutY="231.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgLogout1" fitHeight="105.0" fitWidth="105.0" layoutX="453.0" layoutY="231.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

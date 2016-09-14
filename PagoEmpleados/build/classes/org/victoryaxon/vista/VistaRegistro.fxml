@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="339.0" prefWidth="296.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.victoryaxon.controladores.ControladorRegistro">
+   <children>
+      <Label layoutX="29.0" layoutY="184.0" text="Nickname" />
+      <Label layoutX="31.0" layoutY="225.0" text="Password" />
+      <Button fx:id="btnCancelar" cancelButton="true" layoutX="155.0" layoutY="269.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <ImageView fx:id="imgUsuarios" fitHeight="76.0" fitWidth="105.0" layoutX="110.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/usuario.png" />
+         </image></ImageView>
+      <Button defaultButton="true" layoutX="75.0" layoutY="269.0" mnemonicParsing="false" onAction="#guardar" text="Aceptar" />
+      <TextField fx:id="txtNombre" layoutX="132.0" layoutY="109.0" />
+      <TextField fx:id="txtApellido" layoutX="132.0" layoutY="145.0" />
+      <TextField fx:id="txtUsername" layoutX="132.0" layoutY="184.0" />
+      <Label layoutX="29.0" layoutY="145.0" text="Apellido" />
+      <Label layoutX="29.0" layoutY="109.0" text="Nombre" />
+      <PasswordField fx:id="txtContraseña" layoutX="132.0" layoutY="221.0" />
+   </children>
+</AnchorPane>

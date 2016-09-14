@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PagoEmpleados.jnlp">
+  <information>
+    <title>PagoEmpleados</title>
+    <vendor>viaro-participant</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PagoEmpleados.jar" size="548217" download="eager" />
+    <jar href="lib\sqljdbc4.jar" size="586895" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PagoEmpleados" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="org.victoryaxon.sistema.Principal"  name="PagoEmpleados" />
+  <update check="always"/>
+</jnlp>
